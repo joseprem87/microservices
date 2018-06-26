@@ -1,0 +1,17 @@
+zuul:
+  routes:
+    uaa:
+      path: /uaa/**
+      sensitiveHeaders:
+      serviceId: oauth-server
+    reservation:
+      path: /reservation/**
+      sensitiveHeaders:
+      serviceId: reservation-service
+spring:
+  application:
+    name: zuul
+server:
+  port: 9000
+
+
